@@ -6,8 +6,6 @@
 // FOUNDATION SETTINGS
 //
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
-
 // This is the default html and body font-size for the base rem value.
 // $rem-base: 16px;
 
@@ -752,13 +750,13 @@ $orbit-caption-font-color: $body-font-color;
 // $orbit-timer-show-progress-bar: true;
 
 // We use these to control the bullet nav styles
-// $orbit-bullet-nav-color: #ccc;
-// $orbit-bullet-nav-color-active: #999;
+$orbit-bullet-nav-color: $secondary-color;
+$orbit-bullet-nav-color-active: $primary-color;
 // $orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers
 // $orbit-slide-number-bg: rgba(0,0,0,0);
-// $orbit-slide-number-font-color: #fff;
+$orbit-slide-number-font-color: transparent;
 // $orbit-slide-number-padding: rem-calc(5);
 
 // We use these to controls the css animation
@@ -766,9 +764,9 @@ $orbit-caption-font-color: $body-font-color;
 // $orbit-animation-ease: ease-in-out;
 
 // Hide controls on small
-// $orbit-nav-hide-for-small: true;
-// $orbit-bullet-hide-for-small: true;
-// $orbit-timer-hide-for-small: true;
+$orbit-nav-hide-for-small: true;
+$orbit-bullet-hide-for-small: true;
+$orbit-timer-hide-for-small: true;
 
 // Graceful Loading Wrapper and preloader
 // $wrapper-class: "slideshow-wrapper";
@@ -1181,7 +1179,7 @@ $topbar-bg-color: #F8F8F8;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 75px;
+$topbar-height: 45px;
 $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1192,26 +1190,26 @@ $topbar-margin-bottom: 0;
 $topbar-dropdown-bg: scale-color($topbar-bg, $lightness: -10%);
 $topbar-dropdown-link-color: #000;
 $topbar-dropdown-link-bg: scale-color($topbar-bg, $lightness: -10%);
-// $topbar-dropdown-link-weight: normal;
-// $topbar-dropdown-toggle-size: 5px;
-// $topbar-dropdown-toggle-color: #fff;
-// $topbar-dropdown-toggle-alpha: 0.4;
+$topbar-dropdown-link-weight: 300;
+$topbar-dropdown-toggle-size: 5px;
+$topbar-dropdown-toggle-color: $primary-color;
+$topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $primary-color;
-$topbar-link-color-hover: $primary-color;
+$topbar-link-color-hover: $alert-color;
 $topbar-link-color-active: $alert-color;
 $topbar-link-color-active-hover: $alert-color;
-// $topbar-link-weight: normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-weight: normal;
+$topbar-link-font-size: rem-calc(16);
 $topbar-link-hover-lightness: 0%;
-// $topbar-link-bg: $topbar-bg;
+$topbar-link-bg: $topbar-bg;
 $topbar-link-bg-hover: $topbar-bg;
 $topbar-link-bg-active: $topbar-bg;
 $topbar-link-bg-active-hover: $topbar-bg;
-// $topbar-link-font-family: $body-font-family;
-// $topbar-link-text-transform: none;
-$topbar-link-padding: $topbar-height / 4;
+$topbar-link-font-family: $body-font-family;
+$topbar-link-text-transform: none;
+$topbar-link-padding: $topbar-height / 6;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;
@@ -1238,7 +1236,7 @@ $topbar-transition-speed: .3s;
 // $topbar-media-query: $medium-up;
 
 // Divider Styles
-$topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
+// $topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class

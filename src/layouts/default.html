@@ -4,61 +4,16 @@
     <meta charset="utf-8" />
     <meta content="favicon_128.png" itemprop="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prototype - Molinair Insurance</title>
+    <title>{{title}}</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="{{assets}}css/app.css" />
     <script src="{{assets}}js/modernizr.js"></script>
   </head>
   <body class="antialiased">
 
-    <div class="contain-to-grid fixed">
-      <nav class="top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <img src="{{assets}}images/logo.png" alt="Molinair Insurance" width="200">
-          </li>
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-        </ul>
+    {{> nav}}
 
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="active has-dropdown">
-              <a href="#">For Individuals</a>
-              <ul class="dropdown">
-                <li><a href="#">First link in dropdown</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown">
-              <a href="#">For Business</a>
-              <ul class="dropdown">
-                <li><a href="#">First link in dropdown</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown">
-              <a href="#">Research Center</a>
-              <ul class="dropdown">
-                <li><a href="#">First link in dropdown</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown">
-              <a href="#">Service</a>
-              <ul class="dropdown">
-                <li><a href="#">First link in dropdown</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown">
-              <a href="#">Contact</a>
-              <ul class="dropdown">
-                <li><a href="#">First link in dropdown</a></li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </nav>
-    </div>
-
-    {{>body}}
+    {{> body}}
 
     <footer>
       <section class="footer-top bg-slate">

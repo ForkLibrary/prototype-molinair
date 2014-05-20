@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         },
         expand: true,
         cwd: 'src/pages/',
-        src: '**/*.html',
+        src: '**/*.hbs',
         dest: 'dist/'
       }
     },
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
       },
 
       assemble_pages: {
-        files: ['src/pages/**/*.html'],
+        files: ['src/pages/**/*.hbs'],
         tasks: ['newer:assemble'],
         options: {livereload:true}
       }

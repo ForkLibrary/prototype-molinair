@@ -11,7 +11,7 @@
   </head>
   <body class="antialiased">
 
-    <div class="contain-to-grid fixed">
+        <div class="contain-to-grid fixed">
       <nav class="top-bar" data-topbar>
         <ul class="title-area">
           <li class="name">
@@ -21,16 +21,13 @@
         </ul>
 
         <section class="top-bar-section">
+          <div class="topright">
+            <span class="phone">999-999-9999</span>
+          </div>
           <!-- Right Nav Section -->
           <ul class="right">
             <li class="active has-dropdown">
-              <a href="#">For Individuals</a>
-              <ul class="dropdown">
-                <li><a href="#">First link in dropdown</a></li>
-              </ul>
-            </li>
-            <li class="has-dropdown">
-              <a href="#">For Business</a>
+              <a href="#">Products</a>
               <ul class="dropdown">
                 <li><a href="#">First link in dropdown</a></li>
               </ul>
@@ -53,13 +50,50 @@
                 <li><a href="#">First link in dropdown</a></li>
               </ul>
             </li>
+            <li class="divider"></li>
+            <li class="has-form">
+              <a class="button" href="/business">Business</a>
+            </li>
           </ul>
         </section>
       </nav>
     </div>
 
-    <div class="orbit">
-  <ul class="orbit-slides" data-orbit>
+
+    
+
+<div class="orbit">
+  <div class="medium-3 columns panel quickquote">
+    <div class="ModRevolutionVortexesModuleC">
+  <h3>Get a Quote</h3>
+  <select class="quote-niche" id="element_2" name="element_2">
+    <option value="/personal">Personal</option>
+    <option value="/business">Business</option>
+  </select>
+  <input class="quote-zip" maxlength="5" value="" id="element_1" name="element_1" type="text" placeholder="ZIP Code">
+  <a class="quote-submit button success expand" href="personal/insurance">Get Quote</a>
+  <!-- <input class="quote-submit button success expand" value="Get Quote" type="submit"> -->
+</div>
+  <!-- <script> -->
+  <!--   $(function(){ -->
+  <!--     $(".quote-zip").keypress(function(a) { -->
+  <!--       if (a.keyCode == 13) { -->
+  <!--         getQuote(); -->
+  <!--         return false; -->
+  <!--       } -->
+  <!--     }); -->
+  <!--     $(".quote-submit").click(function() { -->
+  <!--       getQuote(); -->
+  <!--       return false; -->
+  <!--     }); -->
+  <!--   }); -->
+  <!--   function getQuote(){ -->
+  <!--     location.href= document.forms[0].element_2.value + '#quote/' + document.forms[0].element_1.value; -->
+  <!--   } -->
+  <!-- </script> -->
+
+  </div>
+  <ul class="orbit-slides" data-orbit data-options="resume_on_mouseout:true;">
     <li>
       <img src="http://placehold.it/3000x1750/A92B48/fff" alt="slide 1" />
       <div class="orbit-caption">
@@ -83,142 +117,56 @@
 
 <div class="row">
   <div class="large-12 columns">
-    <div class="panel">
-      <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-      <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-      <p>Once you've exhausted the fun in this document, you should check out:</p>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-      <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-    </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-        </div>
-      </div>
-    </div>
+    <h2>Innovative, interactive & invaluable. Insurance solutions for every occasion</h2>
+    <p>We are insurance brokers and consultants located in Mississauga, Ontario. We have been serving our local community and Ontario for over 30 years! Combining experience and premium service, we are the best place for all your personal and commercial insurance needs in the Greater Toronto Area.</p>
   </div>
 </div>
 
 <div class="row">
-  <div class="large-8 medium-8 columns">
-    <h5>Here&rsquo;s your basic grid:</h5>
-    <!-- Grid Example -->
-
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout panel">
-          <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 medium-6 columns">
-        <div class="callout panel">
-          <p>Six columns</p>
-        </div>
-      </div>
-      <div class="large-6 medium-6 columns">
-        <div class="callout panel">
-          <p>Six columns</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="callout panel">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="callout panel">
-          <p>Four columns</p>
-        </div>
-      </div>
-      <div class="large-4 medium-4 small-4 columns">
-        <div class="callout panel">
-          <p>Four columns</p>
-        </div>
-      </div>
-    </div>
-
-    <hr />
-
-    <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-    <form>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-12.columns" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <label>Input Label</label>
-          <input type="text" placeholder="large-4.columns" />
-        </div>
-        <div class="large-4 medium-4 columns">
-          <div class="row collapse">
-            <label>Input Label</label>
-            <div class="small-9 columns">
-              <input type="text" placeholder="small-9.columns" />
-            </div>
-            <div class="small-3 columns">
-              <span class="postfix">.com</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Select Box</label>
-          <select>
-            <option value="husker">Husker</option>
-            <option value="starbuck">Starbuck</option>
-            <option value="hotdog">Hot Dog</option>
-            <option value="apollo">Apollo</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-6 medium-6 columns">
-          <label>Choose Your Favorite</label>
-          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-        </div>
-        <div class="large-6 medium-6 columns">
-          <label>Check these out</label>
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-          <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="large-12 columns">
-          <label>Textarea Label</label>
-          <textarea placeholder="small-12.columns"></textarea>
-        </div>
-      </div>
-    </form>
+  <div class="small-6 medium-3 columns">
+    <a href="#">
+      <img class="th" alt="Mobile App" src="assets/images/photos/mobApp.jpg" width="300" height="170">
+    </a>
+    <h4>Mobile App</h4>
+    <p>We go where you go! All the support you need right on your phone.</p>
+    <p><a href="https://play.google.com/store/apps/details?id=com.waxworks.ibao" target="_blank">Android</a> / 
+    <a href="http://itunes.apple.com/us/app/icompanion/id542513267?ls=1&amp;mt=8" target="_blank">Apple</a> / 
+    <a href="http://appworld.blackberry.com/webstore/content/119804/?lang=en" target="_blank">Blackberry</a></p>
   </div>
 
-  <div class="large-4 medium-4 columns">
-    <h5>Try one of these buttons:</h5>
-    <p><a href="#" class="small button">Simple Button</a><br/>
-    <a href="#" class="small radius button">Radius Button</a><br/>
-    <a href="#" class="small round button">Round Button</a><br/>
-    <a href="#" class="medium success button">Success Btn</a><br/>
-    <a href="#" class="medium alert button">Alert Btn</a><br/>
-    <a href="#" class="medium secondary button">Secondary Btn</a></p>
-    <div class="panel">
-      <h5>So many components, girl!</h5>
-      <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-      <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+  <div class="small-6 medium-3 columns">
+    <a href="/contact/">
+      <img class="th" alt="i4c" src="assets/images/photos/etower.jpg" width="300" height="170">
+    </a>
+    <h4>Travel Insurance</h4>
+    <p>Whether you are traveling abroad or visiting Canada? We got you covered.</p>
+    <p><a href="/contact/">Contact Us</a></p>
+  </div>
+
+  <div class="small-6 medium-3 columns">
+    <a href="/contact/">
+      <img class="th" alt="Essential Life" src="assets/images/photos/el-300.jpg" width="300" height="170">
+    </a>
+    <h4>Essential Life</h4>
+    <p>Life is even better when you and your family are protected!</p>
+    <p><a href="/contact/">Talk To Us Today!</a></p>
+  </div>
+
+  <div class="small-6 medium-3 columns">
+    <a href="/fresh-start/">
+        <img class="th" alt="i4c" src="assets/images/photos/frsh-start-300.jpg" width="300" height="170">
+      </a>
+      <h4>‘Fresh Start’ High Risk Auto</h4>
+      <p>The #1 solution in cleaning up your auto insurance.</p>
+      <p><a href="/fresh-start/">Get More Info</a></p>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="row">
+    <div class="small-12 columns text-center">
+      <h2>Our Story</h2>
+      <p>For over 30 years we have been building relationships in order to understand our clients unique insurance needs. Our dedicated team of licensed brokers and consultants have the knowledge and experience to provide our clients with professional and personalized service. We strive to always earn their trust &amp; satisfaction. Insurance Executives Brokers &amp; Consultants Inc. has partnered with large, innovated and financially strong insurance companies in order to provide our clients with peace of mind and the best value for their insurance costs.</p>
     </div>
   </div>
 </div>

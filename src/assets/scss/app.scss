@@ -1,15 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
+
 @import "settings";
 @import "foundation";
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.top-bar .topright {
+  top: -10px;
+  right: 15px;
+}
+
+.quickquote {
+  position: absolute;
+  top: 125px;
+  right: 75px;
+  z-index: 10;
+}
 
 .name img {
   padding: 12px 0;
 }
 
-.top-bar-section ul li > a {
-  transition-duration: .3s;
-  //doesn'twork
-  &:hover {
-    border-bottom: $alert-color 2px solid;
+.top-bar {
+  height: 80px;
+}
+
+.top-bar-section > ul {
+  margin-top: $topbar-height / 1.5;
+  > .divider {
+    border-right: solid 1px scale-color($secondary-color,-25%);
+  }
+  li > a {
+    transition-duration: .3s;
+    &:hover {
+      // border-bottom: $alert-color 2px solid;
+    }
   }
 }
 
