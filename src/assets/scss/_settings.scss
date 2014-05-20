@@ -1198,20 +1198,20 @@ $topbar-dropdown-link-bg: scale-color($topbar-bg, $lightness: -10%);
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-$topbar-link-color: #000;
-$topbar-link-color-hover: #000;
-$topbar-link-color-active: $primary-color;
-$topbar-link-color-active-hover: $primary-color;
+$topbar-link-color: $primary-color;
+$topbar-link-color-hover: $primary-color;
+$topbar-link-color-active: $alert-color;
+$topbar-link-color-active-hover: $alert-color;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
-// $topbar-link-hover-lightness: -10%; // Darken by 10%
+$topbar-link-hover-lightness: 0%;
 // $topbar-link-bg: $topbar-bg;
-$topbar-link-bg-hover: scale-color($topbar-bg, $lightness: -20%);
+$topbar-link-bg-hover: $topbar-bg;
 $topbar-link-bg-active: $topbar-bg;
-$topbar-link-bg-active-hover: scale-color($topbar-bg, $lightness: -14%);
+$topbar-link-bg-active-hover: $topbar-bg;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: $topbar-height / 3;
+$topbar-link-padding: $topbar-height / 4;
 
 // $topbar-button-font-size: 0.75rem;
 // $topbar-button-top: 7px;

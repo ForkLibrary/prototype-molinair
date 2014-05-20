@@ -5,7 +5,33 @@
   padding: 12px 0;
 }
 
+.top-bar-section ul li > a {
+  transition-duration: .3s;
+  //doesn'twork
+  &:hover {
+    border-bottom: $alert-color 2px solid;
+  }
+}
+
 .orbit {
   width: 100%;
   height: auto;
+}
+
+footer section {
+  padding: 1.25rem;
+}
+
+.bg-slate, .bg-dark-slate {
+  &, h1, h2, h3, h4, h5, h6, p, a {
+    color: #bababa;
+  }
+}
+
+.bg-slate {
+  background-color: $slate-color;
+}
+
+.bg-dark-slate {
+  background-color: $dark-slate-color;
 }
