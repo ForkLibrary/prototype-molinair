@@ -732,9 +732,9 @@ $anchor-font-color-hover: scale-color($alert-color, $lightness: -14%);
 
 // We use these to control the caption styles
 // $orbit-container-bg: none;
-$orbit-caption-bg: rgba(255,255,255, 0.8);
+$orbit-caption-bg: transparent;
 $orbit-caption-font-color: $body-font-color;
-// $orbit-caption-font-size: rem-calc(14);
+$orbit-caption-font-size: rem-calc(44);
 // $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
 // $orbit-caption-padding: rem-calc(10 14);
 // $orbit-caption-height: auto;
@@ -1224,8 +1224,8 @@ $topbar-link-padding: $topbar-height / 6;
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: rem-calc(13);
 // $topbar-menu-link-weight: bold;
-// $topbar-menu-link-color: #fff;
-// $topbar-menu-icon-color: #fff;
+$topbar-menu-link-color: $alert-color;
+$topbar-menu-icon-color: $alert-color;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 

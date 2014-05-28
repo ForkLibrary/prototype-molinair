@@ -3,6 +3,10 @@
 @import "settings";
 @import "foundation";
 
+.fixed {
+  box-shadow: #999 0 1px 1px;
+}
+
 .topright {
   position: absolute;
   top: 0;
@@ -12,13 +16,6 @@
 .top-bar .topright {
   top: -10px;
   right: 15px;
-}
-
-.quickquote {
-  position: absolute;
-  top: 125px;
-  right: 75px;
-  z-index: 10;
 }
 
 .name img {
@@ -47,13 +44,29 @@
   height: auto;
 }
 
-footer section {
-  padding: 1.25rem;
+.orbit-container .orbit-slides-container li .orbit-caption {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: white;
+    text-shadow: #444 1px 1px 0;
+  }
+}
+
+footer {
+  section {
+    padding: 1.25rem;
+  }
+}
+
+.footer-super {
+
 }
 
 .bg-slate, .bg-dark-slate {
-  &, h1, h2, h3, h4, h5, h6, p, a {
-    color: #bababa;
+  &, p, a {
+    color: scale-color($slate-color, $lightness: 50%);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
   }
 }
 
@@ -62,5 +75,46 @@ footer section {
 }
 
 .bg-dark-slate {
-  background-color: $dark-slate-color;
+  background-color: $dark-slate-color !important;
+}
+
+.phone {
+  font-size: 20px;
+}
+
+.footer-top {
+  position: relative;
+}
+
+.footer-top-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("http://subtlepatterns.com/patterns/congruent_outline.png");
+  opacity: 0.25;
+}
+
+@media #{$medium-up} {
+
+  .orbit {
+    .quickquote {
+      opacity: .85;
+    }
+  }
+
+  .orbit-container .orbit-slides-container li .orbit-caption {
+    bottom: no;
+    top: 1em;
+    left: 1em;
+  }
+
+  .quickquote {
+    position: absolute;
+    top: 125px;
+    right: 75px;
+    z-index: 10;
+  }
+
 }
