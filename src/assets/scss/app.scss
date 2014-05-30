@@ -63,7 +63,7 @@ footer {
 
 .bg-slate, .bg-dark-slate {
   &, p, a {
-    color: scale-color($slate-color, $lightness: 50%);
+    color: scale-color($slate-color, $lightness: 80%);
   }
   h1, h2, h3, h4, h5, h6 {
     color: white;
